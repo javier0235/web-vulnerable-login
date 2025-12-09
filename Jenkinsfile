@@ -9,7 +9,7 @@ pipeline {
     }
     stage('SonarQube Analysis') {
       steps {
-        withSonarQubeEnv('SonarQube') {
+        withSonarQubeEnv('Sonarqube_de_lab') { // nombre exacto del servidor
           sh """
             sonar-scanner \
             -Dsonar.projectKey=vulnerable \
