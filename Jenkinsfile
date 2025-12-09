@@ -13,7 +13,7 @@ pipeline {
                     script {
                         // Obtiene la ruta de la instalación de SonarQube Scanner definida en Jenkins
                         def scannerHome = tool name: 'sonar-scanner', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
-                        sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=vulnerable -Dsonar.sources=. -Dsonar.host.url=http://192.168.1.147:9000"
+                        sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=vulnerable -Dsonar.sources=. -Dsonar.host.url=http://192.168.1.148:9000"
                     }
                 }
             }
